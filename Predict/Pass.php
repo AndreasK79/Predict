@@ -15,4 +15,14 @@ class Predict_Pass
     public $vis;      /*!< Visibility string, e.g. VSE, -S-, V-- */
     public $details = array();  /*!< List of pass_detail_t entries */
     public $max_apparent_magnitude = null; /* maximum apparent magnitude, experimental */
+    /* The following variables were added to fix newer PHP errors */
+    public $visible_aos;
+    public $visible_aos_az;
+    public $visible_aos_el;
+    public $visible_tca;
+    public $visible_max_el;
+    public $visible_max_el_az;
+    public $visible_los;
+    public $visible_los_az;
+    public $visible_los_el;
 }
